@@ -7,13 +7,19 @@ we-need-ad
 由于本人刚入门js，简直就是菜鸟，如果有建议请不吝赐教～～
 
 很简单，在head中引用
-    <script src="你的目录/ad.js"></script>
+```python
+<script src="你的目录/ad.js"></script>
+```
 ad.js这个文件里面内容
-    document.write('<div id="ad">这里放你的广告内容</div>') /*在这个div里放你的广告，你可以把你原先的广告div放到这里来*/
+```python
+document.write('<div id="ad">这里放你的广告内容</div>') /*在这个div里放你的广告，你可以把你原先的广告div放到这里来*/
+```
 在您网页的</head>标签前插入
-    	<script type="text/javascript">
-        if (document.getElementById("ad") == undefined){
-            document.write('<p>亲～您为嘛要使用广告屏蔽插件呢。本站压根儿没广告啊？其它网站里正常广告还是不要屏蔽了，人家指着广告吃饭呢，哪个网站广告实在多得忍不了，再添加进屏蔽名单好了——————<strong>2分米</strong></p>');
-        }
-    </script>
+```python
+<script type="text/javascript">
+    if (document.getElementById("ad") == undefined){
+       document.write('<p>亲～您为嘛要使用广告屏蔽插件呢。本站压根儿没广告啊？其它网站里正常广告还是不要屏蔽了，人家指着广告吃饭呢，哪个网站广告实在多得忍不了，再添加进屏蔽名单好了——————<strong>2分米</strong></p>');
+       }
+</script>
+```
 然后就OK了。    
